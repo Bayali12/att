@@ -1,0 +1,134 @@
+/* BACKGROUND */
+
+.ball {
+  position: fixed;
+  border-radius: 50%;
+  z-index: -1;
+  background: url('/img/noise.png');
+}
+
+.purple-light {
+  top: -154px;
+  left: 602px;
+  width: 259px;
+  height: 259px;
+  border-radius: 259px;
+  opacity: 0.5;
+  background: #833ab4;
+  filter: blur(196px);
+}
+
+.purple-ball {
+  top: -2px;
+  left: 868px;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(
+    82.3% 82.3% at 27.25% 26.5%,
+    rgba(236, 208, 255, 0.64) 0%,
+    rgba(161, 93, 207, 0.24) 59.67%,
+    rgba(118, 49, 164, 0.21) 78.59%,
+    rgba(86, 24, 128, 0.23) 100%
+  );
+  filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
+  backdrop-filter: blur(2px);
+}
+
+.red-ball-big {
+  top: 83px;
+  left: 519px;
+  width: 83px;
+  height: 83px;
+  background: radial-gradient(
+    82.3% 82.3% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.54) 0%,
+    rgba(212, 93, 93, 0.26) 59.67%,
+    rgba(167, 49, 49, 0.25) 78.59%,
+    rgba(130, 25, 25, 0.25) 100%
+  );
+  filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+  backdrop-filter: blur(2px);
+}
+
+.red-light {
+  top: 251px;
+  left: -102px;
+  width: 311px;
+  height: 311px;
+  border-radius: 311px;
+  opacity: 0.5;
+  background: #961a1a;
+  filter: blur(196px);
+}
+
+.red-ball-small {
+  top: 547px;
+  left: 851px;
+  width: 28px;
+  height: 28px;
+  background: radial-gradient(
+    82.3% 82.3% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.48) 0%,
+    rgba(212, 93, 93, 0.25) 59.67%,
+    rgba(167, 49, 49, 0.26) 78.59%,
+    rgba(130, 25, 25, 0.23) 100%
+  );
+  filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
+  backdrop-filter: blur(2px);
+}
+
+@media (max-width: 430px) {
+  .purple-light {
+    top: 161px;
+    left: 259px;
+  }
+
+  .purple-ball {
+    width: 40px;
+    height: 40px;
+    top: 290px;
+    left: 296px;
+  }
+
+  .red-ball-big {
+    width: 43px;
+    height: 43px;
+    left: 29px;
+    top: 456px;
+    filter: blur(2px);
+  }
+
+  .red-ball-small {
+    width: 18px;
+    height: 18px;
+    left: 278px;
+    top: 617px;
+  }
+
+  .red-light {
+    left: -55px;
+    top: 295px;
+  }
+
+  .yellow-light {
+    top: 573px;
+    left: -66px;
+    width: 200px;
+    height: 200px;
+    background: #fcb045;
+    opacity: 0.4;
+    filter: blur(196px);
+  }
+
+  .yellow-ball {
+    top: 683px;
+    left: 46px;
+    width: 25px;
+    height: 25px;
+    background: radial-gradient(
+      105.65% 105.65% at 0% 11.96%,
+      rgba(255, 233, 203, 0.57) 0%,
+      rgba(184, 131, 18, 0.45) 100%
+    );
+  }
+}
